@@ -57,3 +57,13 @@ python manage.py migrate
 python manage.py createsuperuser
 python manage.py runserver
 ```
+
+# 5. Associate snippets to users
+
+- `snippets/serializers.py` [PrimaryKeyReleatedField]
+- `snippets/views.py` [ListAPIView], [RetrieveAPIView], [perform_create]
+
+[PrimaryKeyReleatedField]: https://www.django-rest-framework.org/api-guide/relations/#primarykeyrelatedfield
+[ListAPIView]: https://www.django-rest-framework.org/api-guide/generic-views/#listapiview
+[RetrieveAPIView]: https://www.django-rest-framework.org/api-guide/generic-views/#retrieveapiview
+[perform_create]: https://www.django-rest-framework.org/api-guide/generic-views/#get_serializer_classself

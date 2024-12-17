@@ -4,7 +4,10 @@ from .models import Snippet
 
 
 class SnippetAdmin(admin.ModelAdmin):
-    readonly_fields = ("highlighted",)
+    readonly_fields = (
+        "owner",
+        "highlighted",
+    )
 
 
 # Register your models here.
